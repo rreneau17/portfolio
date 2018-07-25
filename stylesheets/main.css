@@ -20,6 +20,10 @@ body {
     font-weight: 600;
 }
 
+.dropdown-menu li {
+    padding: 10px;
+}
+
 .portfolio-pic img {
     width: 100%;
     max-height: 275px;
@@ -79,8 +83,7 @@ p {
 }
 
 .carousel img {
-    object-fit: cover;
-    /* height: 500px; */
+    /* object-fit: cover; */
     width: 80%;
     max-width: 1200px;
     max-height: 500px;
@@ -106,4 +109,16 @@ p {
     display: block;
     margin-right: auto;
     margin-left: auto;
+    max-width: 850px;
+}
+
+#price-compare {
+    background-color: #f8f8f8;
+}
+
+#price-compare img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1000px;
 }
