@@ -51,7 +51,7 @@ p {
     line-height: 1.8em;
 }
 
-#featured-project {
+#featured-project, #price-compare, #contact {
     background-color: #f8f8f8;
     /* background-color: #eff8ff; */
 }
@@ -112,13 +112,21 @@ p {
     max-width: 850px;
 }
 
-#price-compare {
-    background-color: #f8f8f8;
-}
-
 #price-compare img {
     display: block;
     margin-right: auto;
     margin-left: auto;
     max-width: 1000px;
 }
+
+/* creates zoom animation effect for contact icons */
+
+.zoom {
+    transition: transform .2s; 
+    font-size: 3.5em; 
+    color: gray;
+}
+
+.zoom:hover {
+    transform: scale(1.2); 
+
