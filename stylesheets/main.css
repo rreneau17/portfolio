@@ -77,13 +77,6 @@ p {
     margin-bottom: 50px;
 }
 
-.carousel img {
-    /* object-fit: cover; */
-    width: 80%;
-    max-width: 1200px;
-    max-height: 500px;
-    min-height: 500px;
-}
 
 .carousel-control-prev-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='BEBEBE' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
@@ -91,6 +84,14 @@ p {
    
 .carousel-control-next-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='BBEBEBE' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel img {
+    /* object-fit: cover; */
+    width: 80%;
+    max-width: 1200px;
+    max-height: 500px;
+    min-height: 500px;
 }
 
 .carousel-caption {
@@ -142,13 +143,19 @@ p {
         display: none;
     }
 
-    .watch-display-btn {
-        display: block;
+    #price-compare img {
+        display: none
     }
 }
+@media (min-width: 992px) {
 
-.watch-display-btn {
-    display: none;
+    .watch-display-btn {
+        display: none;
+    }
+
+    .compare-display-btn {
+        display: none;
+    }
 }
 
 .skills-icon {

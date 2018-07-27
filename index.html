@@ -72,7 +72,7 @@
                     <br>
                     <h2 class="mt-5">About Me</h2>
                     <br>
-                    <p>I'm currently transitioning back into IT after owning a personal training business in Atlanta, GA where I helped health conscious adults improve their levels of physical conditioning while instilling a sense of personal accountability.  &nbsp;I'm originally from Oklahoma where I attended the University of Central Oklahoma on athletic scholarship and later earned an MBA from the University of Oklahoma while working full time.  &nbsp;Upon graduation I moved to Atlanta to work for CGI as a Senior IT Consultant.  &nbsp;As a Back-End Web Developer, I'm looking to apply my skills towards helping businesses streamline their processes and build great products.</p>
+                    <p>I'm currently transitioning back into IT after owning a personal training business in Atlanta, GA. &nbsp;I'm originally from Oklahoma where I attended the University of Central Oklahoma on athletic scholarship and later earned an MBA from the University of Oklahoma while working full time.  &nbsp;Upon graduation I moved to Atlanta to work for CGI as a Senior IT Consultant.  &nbsp;As a Full Stack Web Developer, I'm seeking opportunities to work with talented engineering teams in building great products while continuing to learn and grow.</p>
                     <br><br><br>
                 </div>
                 <div class="col-xl-2"></div>
@@ -102,52 +102,76 @@
                     </div>
                     <br><br>
                     <div id="gs-slides" class="carousel slide carousel-fade" data-ride="carousel" data-interval="6000">
-                        <!-- Indicators -->
-                        <!-- <ol class="carousel-indicators">
-                            <li data-target="#gs-slides" data-slide-to="0" class="active"></li>
-                            <li data-target="#gs-slides" data-slide-to="1"></li>
-                            <li data-target="#gs-slides" data-slide-to="2"></li>
-                        </ol> -->
                     
                         <!-- The slideshow -->
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="images/home_page.png">
+                                <picture>
+                                    <!-- needed a different pic for smaller screens on this slide -->
+                                    <source media="(max-width: 600px)" srcset="images/home_page_m.png">
+                                    <source media="(max-width: 992px)" srcset="images/home_page_mid.png">
+                                    <img src="images/home_page.png">
+                                </picture>
                                 <div class="carousel-caption">
                                     <br>
                                     <p>Homepage of Group Strength</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="images/featured_workouts.png">
+                                <picture>
+                                    <!-- needed a different pic for smaller screens on this slide -->
+                                    <source media="(max-width: 600px)" srcset="images/featured_workouts_m.png">
+                                    <source media="(max-width: 992px)" srcset="images/featured_workouts_mid.png">
+                                    <img src="images/featured_workouts.png">
+                                </picture>
                                 <div class="carousel-caption">
                                     <br>
                                     <p>Examples of workouts that can be created on Group Strength</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="images/login.png">
+                                <picture>
+                                    <!-- needed a different pic for smaller screens on this slide -->
+                                    <source media="(max-width: 600px)" srcset="images/login_m.png">
+                                    <source media="(max-width: 992px)" srcset="images/login_mid.png">
+                                    <img src="images/login.png">
+                                </picture>
                                 <div class="carousel-caption">
                                     <br>
                                     <p>Authentication by username and password (hashed) or by OAuth 2.0 via Facebook.<p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="images/create_routine.png">
+                                <picture>
+                                    <!-- needed a different pic for smaller screens on this slide -->
+                                    <source media="(max-width: 600px)" srcset="images/create_routine_m.png">
+                                    <source media="(max-width: 992px)" srcset="images/create_routine_mid.png">
+                                    <img src="images/create_routine.png">
+                                </picture>
                                 <div class="carousel-caption">
                                     <br>
                                     <p>Details from an exercise routine.</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="images/dashboard.png">
+                                <picture>
+                                    <!-- needed a different pic for smaller screens on this slide -->
+                                    <source media="(max-width: 600px)" srcset="images/dashboard_m.png">
+                                    <source media="(max-width: 992px)" srcset="images/dashboard_mid.png">
+                                    <img src="images/dashboard.png">
+                                </picture>
                                 <div class="carousel-caption">
                                     <br>
                                     <p>Dashboard to see charts on progress.</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="images/training_results.png">
+                                <picture>
+                                    <!-- needed a different pic for smaller screens on this slide -->
+                                    <source media="(max-width: 600px)" srcset="images/training_results_m.png">
+                                    <source media="(max-width: 992px)" srcset="images/training_results_mid.png">
+                                    <img src="images/training_results.png">
+                                </picture>
                                 <div class="carousel-caption">
                                     <br>
                                     <p>Results for a training session.</p>
@@ -181,9 +205,11 @@
                     <br>
                     <img class="mt-2" src="images/versa_gs_exp.png">
                     <div class="text-center watch-display-btn">
-                            <button type="button" class="btn btn-primary btn-lg fb-width" onclick="window.open('https://github.com/rreneau17/fitbit_to_backend', '_blank')">GitHub</button>
+                            <br>
+                            <button type="button" class="btn btn-primary btn-lg fb-width" onclick="window.open('images/versa_gs_exp.png', '_blank')">See Illustration</button>
                     </div>
                     <br><br><br>
+                    <p class="text-center">You can also check out the code on GitHub.</p><br>
                     <div class="text-center">
                         <button type="button" class="btn btn-primary btn-lg fb-width" onclick="window.open('https://github.com/rreneau17/fitbit_to_backend', '_blank')">GitHub</button>
                     </div>
@@ -203,7 +229,12 @@
                     <p class="mt-2">PriceCompare is a front-end web app that compares movie prices between iTunes and Walmart.  This was a group project completed during my time at the DigitalCrafts bootcamp.</p>
                     <br>
                     <img class="mt-2" src="images/price_compare.png">
+                    <div class="text-center compare-display-btn">
+                        <br>
+                        <button type="button" class="btn btn-primary btn-lg fb-width" onclick="window.open('images/price_compare.png', '_blank')">See Illustration</button>
+                    </div>
                     <br><br><br>
+                    <p class="text-center">You can also check out the code on GitHub.</p><br>
                     <div class="text-center">
                         <button type="button" class="btn btn-primary btn-lg fb-width" onclick="window.open('https://github.com/shivanbhatt/pricecompare', '_blank')">GitHub</button>
                     </div>
@@ -249,10 +280,10 @@
                     <p class="mt-2 text-center">I can be reached via email or any social media outlets. You can also check out my GitHub account to see more of my work, or download my resume to get information about my professional background.</p><br>
                     <!-- popovers are associated with the following icons.  popover attributes provided in main.js -->
                     <div class="contact-icon">
-                        <a href=""><i class="fas fa-envelope zoom"></i></a>
-                        <a href=""><i class="fab fa-github zoom"></i></a>
-                        <a href=""><i class="fab fa-linkedin-in zoom"></i></a>
-                        <a href=""><i class="far fa-file zoom"></i></a>
+                        <a href="mailto:rich.reneau@gmail.com"><i class="fas fa-envelope zoom"></i></a>
+                        <a href="https://github.com/rreneau17" target="_blank"><i class="fab fa-github zoom"></i></a>
+                        <a href="https://www.linkedin.com/in/richreneau" target="_blank"><i class="fab fa-linkedin-in zoom"></i></a>
+                        <a href="images/rich_reneau_resume.pdf" target="_blank"><i class="far fa-file zoom"></i></a>
                     </div>
                 </div>
                 <div class="col-xl-2"></div>
