@@ -72,14 +72,9 @@ p {
     color: black;
 }
 
-#featured-project button {
-    background-color: #0083ff;
-    color: #f8f8f8;
-    font-size: 1.2em;
-}
-
-.fb-width {
+.featured-buttons {
     width: 150px;
+    margin-bottom: 50px;
 }
 
 .carousel img {
@@ -129,4 +124,48 @@ p {
 
 .zoom:hover {
     transform: scale(1.2); 
+}
+
+.td-attr td {
+    padding: 20px 50px;
+    display: inline-block;
+    text-align: center;
+}
+
+@media (max-width: 992px) {
+    /* decreases size of icons */
+    .contact-icon {
+        font-size: .8em;
+    }
+
+    #gs-watch img {
+        display: none;
+    }
+
+    .watch-display-btn {
+        display: block;
+    }
+}
+
+.watch-display-btn {
+    display: none;
+}
+
+.skills-icon {
+    text-align: center;
+}
+
+.skills-icon a {
+    margin: 30px;
+    display: inline-block;
+}
+
+.contact-icon {
+    text-align: center;
+}
+
+.contact-icon a {
+    margin: 20px;
+}
+
 
