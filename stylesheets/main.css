@@ -32,16 +32,6 @@ body {
     object-fit: cover;
 }
 
-#about img {
-    float: right;
-    margin-top: -100px;
-    width: 250px;
-    border-radius: 100%;
-    margin-bottom: 15px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
 h2 {
     font-size: 1.5em;
     font-weight: 600;
@@ -135,6 +125,7 @@ p {
 }
 
 @media (max-width: 992px) {
+
     /* decreases size of icons */
     .contact-icon {
         font-size: .8em;
@@ -156,6 +147,53 @@ p {
 
     .compare-display-btn {
         display: none;
+    }
+}
+@media (min-width: 576px) {
+
+    #about img {
+        float: right;
+        margin-top: -100px;
+        width: 250px;
+        border-radius: 100%;
+        margin-bottom: 15px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .fb-margin {
+        margin-right: 50px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    #about img {
+        /* float: none; */
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        margin-top: -100px;
+        width: 200px;
+        border-radius: 100%;
+    }
+
+    #about h2 {
+        text-align: center;
+        margin-top: 25px !important;
+    }
+
+    .fb-margin {
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Needed to add this to take care of extra padding that was showing up for some unknown reason */
+    .contact-mobile .nav-link {
+        padding: 0px !important;
     }
 }
 
