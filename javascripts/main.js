@@ -16,3 +16,12 @@ $('.nav-link').on('click',function() {
 $('.dropdown-menu').on('click',function() {
     $('.navbar-collapse').collapse('hide');
 });
+
+// scrolls 75 pixels above section to offset the sticky top
+function scrollGS(aID) {
+    window.scrollTo(0,$(aID).offset().top -75) + window.innerHeight == $(document).height();
+}
+// scrolls 64 pixels above section to offset the sticky top
+function scrollGS2(aID) {
+    window.scrollTo(0,$(aID).offset().top -64) + window.innerHeight == $(document).height();
+}

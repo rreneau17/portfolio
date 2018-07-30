@@ -43,16 +43,16 @@
                                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">PORTFOLIO
                                     <span class="caret"></span></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="#featured-project">GROUP STRENGTH</a></li>
-                                        <li><a href="#gs-watch">FITBIT APP</a></li>
-                                        <li><a href="#price-compare">PRICE COMPARE</a></li>
+                                        <li><a href="#" onclick="scrollGS('#featured-project');return false;">GROUP STRENGTH</a></li>
+                                        <li><a href="#" onclick="scrollGS2('#gs-watch');return false;">FITBIT APP</a></li>
+                                        <li><a href="#" onclick="scrollGS('#price-compare');return false;">PRICE COMPARE</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item mx-3">
-                                    <a class="nav-link" href="#skills">SKILLS</a>
+                                    <a class="nav-link" href="#" onclick="scrollGS2('#skills');return false;">SKILLS</a>
                                 </li>
                                 <li class="nav-item mx-3 contact-mobile">
-                                    <a class="nav-link" href="#contact">CONTACT</a>
+                                    <a class="nav-link" href="#" onclick="scrollGS('#contact');return false;">CONTACT</a>
                                 </li>
                             </ul>
                         </div>
@@ -65,17 +65,16 @@
 <!-- portfolio pic, 400px in height, 100% width -->
     <div class="portfolio-pic"><img src="images/laptop_code_mug.jpg"></div>
 
-    <section id="about">
+    <section id="about" class="pb-4">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-xl-2"></div>
-                <div class="col-xl-8">
+                <div class="col-xl-8 mb-2">
                     <img src="images/rich_pic.jpg">
                     <br>
                     <h2 class="mt-5">About Me</h2>
                     <br>
                     <p>I'm a Full Stack Web Developer that is currently transitioning back into IT after owning a personal training business in Atlanta, GA. &nbsp;Originally, I'm from Oklahoma where I attended the University of Central Oklahoma on athletic scholarship and later earned an MBA from the University of Oklahoma while working full time.  &nbsp;Upon graduation I moved to Atlanta to work for CGI as a Senior IT Consultant.  &nbsp;I'm seeking opportunities to work with talented engineering teams in building great products while continuing to learn and grow.</p>
-                    <br><br><br>
                 </div>
                 <div class="col-xl-2"></div>
             </div>
@@ -83,13 +82,12 @@
     </section>
 
 <!-- Featured project -->
-    <section id="featured-project">
+    <section id="featured-project" class="pt-4 pb-5">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-xl-2"></div>
                 <div class="col-xl-8">
-                    <br>
-                    <h2 class="mt-5 text-center" style="font-size: 1.6em;">Featured Project</h2><br>
+                    <h2 class="text-center mt-5" style="font-size: 1.6em;">Featured Project</h2><br>
                     <img class="mt-2" src="images/gs_logo_port.jpg">
                     <br>
                     <div class="gs-anchor"><a href="https://groupstrengthsf.com" target="_blank">www.groupstrengthsf.com</a></div>
@@ -193,10 +191,9 @@
                 </div>
                 <div class="col-xl-2"></div>
             </div>
-        </div>
-        <br><br><br>       
+        </div>       
     </section>
-    <section id="gs-watch">
+    <section id="gs-watch" class="py-4">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-xl-2"></div>
@@ -299,7 +296,9 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-    <script src="javascripts/main.js"></script>
+    <!-- <script src="javascripts/main.js"></script> -->
+    <!-- ?1500 below forces the browser to refresh the javascript file -->
+    <script type="text/javascript" src="javascripts/main.js?1500"></script>
     
 </body>
 </html>
