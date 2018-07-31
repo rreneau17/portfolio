@@ -11,13 +11,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css" />
     <!-- FontAwesome Icons -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:600" rel="stylesheet">
 
     <!-- Custom Styles -->
     <link rel='stylesheet' href='stylesheets/main.css' />
@@ -43,7 +41,8 @@
                                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">PORTFOLIO
                                     <span class="caret"></span></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="#" class="anchor-block" onclick="scrollGS('#featured-project');return false;">GROUP STRENGTH</a></li>
+                                        <!-- in-page links done thru javascript function mainly to account for fixed navigation bar -->
+                                        <li><a href="#" onclick="scrollGS('#featured-project');return false;">GROUP STRENGTH</a></li>
                                         <li><a href="#" onclick="scrollGS2('#gs-watch');return false;">FITBIT APP</a></li>
                                         <li><a href="#" onclick="scrollGS('#price-compare');return false;">PRICE COMPARE</a></li>
                                     </ul>
@@ -62,9 +61,10 @@
             </div>
     </div>
     
-<!-- portfolio pic, 400px in height, 100% width -->
+    <!-- portfolio backdrop pic -->
     <div class="portfolio-pic"><img src="images/laptop_code_mug.jpg"></div>
 
+    <!-- about section -->
     <div id="about" class="pb-4">
         <div class="container-fluid">
             <div class="row">
@@ -81,7 +81,7 @@
         </div>
     </div>
 
-<!-- Featured project -->
+    <!-- Featured project -->
     <div id="featured-project" class="pt-4 pb-5">
         <div class="container-fluid">
             <div class="row">
@@ -107,7 +107,7 @@
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <picture>
-                                    <!-- needed a different pic for smaller screens on this slide -->
+                                    <!-- used different pic for each corresponding viewport -->
                                     <source media="(max-width: 600px)" srcset="images/home_page_m.png">
                                     <source media="(max-width: 992px)" srcset="images/home_page_mid.png">
                                     <img src="images/home_page.png">
@@ -119,7 +119,7 @@
                             </div>
                             <div class="carousel-item">
                                 <picture>
-                                    <!-- needed a different pic for smaller screens on this slide -->
+                                    <!-- used different pic for each corresponding viewport -->
                                     <source media="(max-width: 600px)" srcset="images/featured_workouts_m.png">
                                     <source media="(max-width: 992px)" srcset="images/featured_workouts_mid.png">
                                     <img src="images/featured_workouts.png">
@@ -131,7 +131,7 @@
                             </div>
                             <div class="carousel-item">
                                 <picture>
-                                    <!-- needed a different pic for smaller screens on this slide -->
+                                    <!-- used different pic for each corresponding viewport -->
                                     <source media="(max-width: 600px)" srcset="images/login_m.png">
                                     <source media="(max-width: 992px)" srcset="images/login_mid.png">
                                     <img src="images/login.png">
@@ -143,7 +143,7 @@
                             </div>
                             <div class="carousel-item">
                                 <picture>
-                                    <!-- needed a different pic for smaller screens on this slide -->
+                                    <!-- used different pic for each corresponding viewport -->
                                     <source media="(max-width: 600px)" srcset="images/create_routine_m.png">
                                     <source media="(max-width: 992px)" srcset="images/create_routine_mid.png">
                                     <img src="images/create_routine.png">
@@ -155,7 +155,7 @@
                             </div>
                             <div class="carousel-item">
                                 <picture>
-                                    <!-- needed a different pic for smaller screens on this slide -->
+                                    <!-- used different pic for each corresponding viewport -->
                                     <source media="(max-width: 600px)" srcset="images/dashboard_m.png">
                                     <source media="(max-width: 992px)" srcset="images/dashboard_mid.png">
                                     <img src="images/dashboard.png">
@@ -167,7 +167,7 @@
                             </div>
                             <div class="carousel-item">
                                 <picture>
-                                    <!-- needed a different pic for smaller screens on this slide -->
+                                    <!-- used different pic for each corresponding viewport -->
                                     <source media="(max-width: 600px)" srcset="images/training_results_m.png">
                                     <source media="(max-width: 992px)" srcset="images/training_results_mid.png">
                                     <img src="images/training_results.png">
@@ -193,6 +193,8 @@
             </div>
         </div>       
     </div>
+
+    <!-- Fitbit application section -->
     <div id="gs-watch" class="py-4">
         <div class="container-fluid">
             <div class="row">
@@ -218,6 +220,8 @@
         </div>
         <br><br><br>
     </div>
+
+    <!-- Price compare group project section -->
     <div id="price-compare">
         <div class="container-fluid">
             <div class="row">
@@ -243,6 +247,8 @@
         </div>
         <br><br><br>
     </div>
+
+    <!-- skills section -->
     <div id="skills">
         <div class="container-fluid">
             <div class="row">
@@ -270,6 +276,8 @@
         </div>
         <br><br><br>
     </div>
+
+    <!-- contact section -->
     <div id="contact">
         <div class="container-fluid">
             <div class="row">
@@ -296,9 +304,8 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-    <!-- <script src="javascripts/main.js"></script> -->
-    <!-- ?1500 below forces the browser to refresh the javascript file -->
-    <script type="text/javascript" src="javascripts/main.js?1500"></script>
+    <!-- ?{version#} below forces the browser to refresh the javascript file if it has a new version -->
+    <script type="text/javascript" src="javascripts/main.js?0001"></script>
     
 </body>
 </html>
